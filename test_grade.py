@@ -19,3 +19,6 @@ def test_late_penalty_drops_to_fail():
 
 def test_boundary_exactly_60_passes():
     assert grade(60, False) == "pass"
+
+def test_boundary_just_under_fails():
+    assert grade(59.9, False) == "fail"
