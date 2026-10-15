@@ -4,6 +4,6 @@ def grade(score, late):
         return "invalid"
     if late:
         score -= 10
-    if score >= 60:
+    if score > 60:
         return "pass"
     return "fail"
